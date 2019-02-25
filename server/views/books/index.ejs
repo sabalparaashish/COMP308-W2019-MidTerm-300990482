@@ -5,10 +5,8 @@
       <div class="row">
         <div class="col-md-offset-1 col-md-10">
           <h3>Favourite Books List </h3>
-          <!-- ------------------------ -->
-          <!-- FIX THE ADD BUTTON BELOW -->
-          <!-- ------------------------ -->
-          <a href="" class="btn btn-primary"><i class="fa fa-plus"></i> Add a book</a>
+
+          <a href="books/detail" class="btn btn-primary"><i class="fa fa-plus"></i> Add a book</a>
           <br>
           <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
@@ -24,9 +22,9 @@
                 </thead>
                 <tbody>
                 <!-- Template Row -->
-                <% for (let count = 0; count < books.length; count++) { %>
+                <% for (let count = 0; count < books.length; count++) { %>ng serve
                 <tr>
-                  
+
                   <td><%= books[count].Title %></td>
                   <td class="text-center">$<%= books[count].Price %></td>
                   <td class="text-center"><%= books[count].Author %></td>
